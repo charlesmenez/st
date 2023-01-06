@@ -67,7 +67,7 @@ static unsigned int blinktimeout = 800;
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+static unsigned int cursorthickness = 1;
 
 /*
  * 1: render most of the lines/blocks characters without using the font for
@@ -119,7 +119,7 @@ static const char *colorname[] = {
     "#928374", "#fb4934", "#b8bb26", "#fabd2f", "#83a598", "#d3869b", "#8ec07c",
     "#ebdbb2", [255] = 0,
     /* more colors can be added after 255 to use with DefaultXX */
-    "#add8e6", /* 256 -> cursor */
+    "#ffffff", /* 256 -> cursor */
     "#555555", /* 257 -> rev cursor*/
     "#282828", /* 258 -> bg */
     "#ebdbb2", /* 259 -> fg */
@@ -140,9 +140,8 @@ unsigned int background = 258;
  * 2: Block ("█")
  * 4: Underline ("_")
  * 6: Bar ("|")
- * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers
